@@ -1,4 +1,4 @@
-const SOLSCAN_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...";
+const SOLSCAN_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE3NDk4NjAwMjIwMDUsImVtYWlsIjoid2F4amluaG8wMkBnbWFpbC5jb20iLCJhY3Rpb24iOiJ0b2tlbi1hcGkiLCJhcGlWZXJzaW9uIjoidjIiLCJpYXQiOjE3NDk4NjAwMjJ9.I1laMt2a0wIiMeQ0JFEDDWWqvwLQvnSjcS0mdvy-vM0";
 
 function formatNumber(num) {
   if (num === undefined || num === null) return 'N/A';
