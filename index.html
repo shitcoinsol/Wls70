@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>snif.fun</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header style="display: flex; align-items: center; padding: 16px; justify-content: space-between;">
+    <div style="display: flex; align-items: center;">
+      <img src="assets/logo.png" alt="SNIF Logo" style="height: 40px; margin-right: 12px;" />
+      <h1 style="margin: 0;">snif.fun</h1>
+    </div>
+    <div>
+      <a href="https://x.com/snifdotfun" target="_blank" style="margin-right: 16px; text-decoration: none;">🐦 Twitter</a>
+      <a href="https://believe.app" target="_blank" style="text-decoration: none;">🪙 Buy $SNIF</a>
+    </div>
+  </header>
+
+  <div id="intro">
+    <h1>snif.fun</h1>
+    <div class="search-row">
+      <input type="text" id="tokenInput" placeholder="Enter CA (contract address)..."/>
+      <button onclick="showResults()">Search</button>
+    </div>
+  </div>
+
+  <!-- Floating -->
+  <div id="floating-search" class="desktop-only hidden">
+    <input type="text" id="floatingInput" placeholder="Enter CA..." />
+    <button onclick="showResults(true)">Search</button>
+  </div>
+  <div id="floating-button" class="mobile-only hidden" onclick="toggleMobileSearch()">🔍</div>
+  <div id="mobile-search" class="mobile-only hidden">
+    <input type="text" id="mobileInput" placeholder="Enter CA..." />
+    <button onclick="showResults(true)">Search</button>
+  </div>
+
+  <!-- Recent -->
+  <div id="recent-searches" class="desktop-only hidden">
+    <h4>Recent</h4>
+    <ul id="recent-list"></ul>
+  </div>
+
+  <!-- Error -->
+  <div id="error-message" class="hidden">
+    <img src="assets/wrong.png" alt="broken goggles"/>
+    <p class="error-text">Something went wrong.</p>
+  </div>
+
+  
+  <div style="display: flex; gap: 24px;">
+    <div id="project-info" style="padding: 16px; border: 1px solid #eee; border-radius: 12px; margin-top: 20px; width: 240px; flex-shrink: 0;">
+      <h4 style="margin-top: 0;">About snif.fun</h4>
+      <p style="font-size: 14px;">A simple CA search tool powered by $SNIF token.</p>
+      <div style="margin-top: 8px;">
+        <a href="https://x.com/snifdotfun" target="_blank">🐦 Twitter</a><br/>
+        <a href="https://believe.app" target="_blank">🪙 Buy $SNIF</a>
+      </div>
+    </div>
+    <div style="flex-grow: 1;">
+<div id="results" class="hidden">
+    
+    <div class="token-header" style="display: flex; align-items: center; gap: 16px;">
+      <img src="assets/logo.png" alt="$SNIF Icon" style="height: 48px; width: 48px; border-radius: 50%; border: 1px solid #ccc;" />
+      <div>
+        <h2>$TRUMP <span class="price">$9.91</span></h2>
+        <div class="meta">Market Cap: $9.9B · Liquidity: $423K</div>
+        <div class="meta">Supply: 999M · Burned: 20% · Circulating: 79%</div>
+        <div class="meta">Dev Holdings: 3.2% · LP Provider: Yes · Past Tokens: 5</div>
+      </div>
+  
+
+    </div>
+
+
+    <div class="section">
+      <h3>Chart</h3>
+      <div class="chart">[ Chart Placeholder ]</div>
+    </div>
+
+    <div class="section-grid">
+      <div>
+        <h4>Top Holders</h4>
+        <p>[ Pie Chart Placeholder ]</p>
+      </div>
+      <div>
+        <h4>Holder Change</h4>
+        <p>+83 in last hour</p>
+      </div>
+    </div>
+
+    <div class="section-grid">
+      <div>
+        <h4>Recent Buys / Sells</h4>
+        <ul>
+          <li>Buy - 0.9 SOL</li>
+          <li>Sell - 1.2 SOL</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Buy/Sell Ratio</h4>
+        <p>64% / 36%</p>
+        <h4>Volume Change</h4>
+        <p>+19%</p>
+        <h4>Top Active Wallets</h4>
+        <p>[ 0x123..., 0x456... ]</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+  <footer style="text-align: center; padding: 24px 0; font-size: 14px; color: #888;">
+    powered by <a href="https://snif.fun" target="_blank" style="color: #4f46e5;">snif.fun</a> · 
+    <a href="https://x.com/snifdotfun" target="_blank" style="color: #1DA1F2;">Twitter</a> · 
+    <a href="https://believe.app" target="_blank" style="color: #16a34a;">$SNIF</a>
+  </footer>
+</body>
+
+
+</html>
