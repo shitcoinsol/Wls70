@@ -60,55 +60,46 @@
       </div>
     </div>
     <div style="flex-grow: 1;">
-<div id="results" class="hidden">
-    
-    <div class="token-header" style="display: flex; align-items: center; gap: 16px;">
-      <img src="assets/logo.png" alt="$SNIF Icon" style="height: 48px; width: 48px; border-radius: 50%; border: 1px solid #ccc;" />
-      <div>
-        <h2>$TRUMP <span class="price">$9.91</span></h2>
-        <div class="meta">Market Cap: $9.9B · Liquidity: $423K</div>
-        <div class="meta">Supply: 999M · Burned: 20% · Circulating: 79%</div>
-        <div class="meta">Dev Holdings: 3.2% · LP Provider: Yes · Past Tokens: 5</div>
-      </div>
-  
+      <div id="results" class="hidden">
+        <div class="token-header" style="display: flex; align-items: center; gap: 16px;">
+          <img id="tokenLogo" src="assets/logo.png" alt="$SNIF Icon" style="height: 48px; width: 48px; border-radius: 50%; border: 1px solid #ccc;" />
+          <div>
+            <h2 id="tokenName">$TOKEN <span class="price" id="tokenPrice">$0.00</span></h2>
+            <div class="meta" id="marketCap"></div>
+            <div class="meta" id="liquidity"></div>
+            <div class="meta" id="supply"></div>
+          </div>
+        </div>
 
-    </div>
+        <div class="section">
+          <h3>Chart</h3>
+          <div id="price-chart-widget-container" class="chart"></div>
+        </div>
 
+        <div class="section-grid">
+          <div>
+            <h4>Top Holders</h4>
+            <ul id="top-holders"></ul>
+          </div>
+          <div>
+            <h4>Holder Change</h4>
+            <div id="holder-change-tabs"></div>
+            <p id="holder-change-value"></p>
+          </div>
+        </div>
 
-    <div class="section">
-      <h3>Chart</h3>
-      <div class="chart">[ Chart Placeholder ]</div>
-    </div>
-
-    <div class="section-grid">
-      <div>
-        <h4>Top Holders</h4>
-        <p>[ Pie Chart Placeholder ]</p>
+        <div class="section-grid">
+          <div>
+            <h4>Recent Buys / Sells</h4>
+            <ul id="recent-swaps"></ul>
+          </div>
+          <div>
+            <h4>Buy/Sell Ratio</h4>
+            <div id="ratio-tabs"></div>
+            <div id="ratio-bar" style="height:20px;background:#eee;border-radius:4px;overflow:hidden;"><div id="ratio-fill" style="height:100%;width:50%;background:green;"></div></div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Holder Change</h4>
-        <p>+83 in last hour</p>
-      </div>
-    </div>
-
-    <div class="section-grid">
-      <div>
-        <h4>Recent Buys / Sells</h4>
-        <ul>
-          <li>Buy - 0.9 SOL</li>
-          <li>Sell - 1.2 SOL</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Buy/Sell Ratio</h4>
-        <p>64% / 36%</p>
-        <h4>Volume Change</h4>
-        <p>+19%</p>
-        <h4>Top Active Wallets</h4>
-        <p>[ 0x123..., 0x456... ]</p>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 
